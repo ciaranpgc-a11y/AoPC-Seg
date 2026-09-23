@@ -8,8 +8,9 @@ AoPC-Seg consists of two single-vessel models, one per vessel, distributed as
 ONNX files that run with ONNX Runtime. The reference script uses the CPU
 execution provider; compatible GPU providers can be selected in custom code.
 
-> **Research use only.** AoPC-Seg is not a medical device and has not been
-> approved for clinical use. Outputs must be reviewed by a qualified person.
+> **Clinical-use notice.** AoPC-Seg is a research prototype, not a medical
+> device, and is not approved for clinical use. Do not rely on its outputs for
+> patient care. This notice does not alter the Apache License 2.0 permissions.
 
 ## Contents
 
