@@ -1,0 +1,36 @@
+{
+  "model": "AoPC-Seg v1.1 descending aorta",
+  "weights": "weights/descending.onnx",
+  "input": {
+    "name": "image",
+    "layout": "NCHW",
+    "shape": [
+      1,
+      1,
+      192,
+      256
+    ]
+  },
+  "output": {
+    "name": "logits",
+    "layout": "NCHW",
+    "classes": {
+      "0": "background",
+      "1": "descending aorta"
+    },
+    "argmax_axis": 1
+  },
+  "target_spacing_yx_mm": [
+    1.25,
+    1.25
+  ],
+  "normalization": "zscore_image",
+  "patch_size_yx": [
+    192,
+    256
+  ],
+  "tiling": {
+    "step_fraction": 0.5,
+    "gaussian_sigma_fraction": 0.125
+  }
+}
