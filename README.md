@@ -28,8 +28,8 @@ execution provider; compatible GPU providers can be selected in custom code.
 
 ```bash
 git lfs install
-git clone https://github.com/ciaranpgc-a11y/AoPC-Seg-Aortic-2D-PC-CMR-model.git
-cd AoPC-Seg-Aortic-2D-PC-CMR-model
+git clone https://github.com/ciaranpgc-a11y/AoPC-Seg.git
+cd AoPC-Seg
 pip install -r requirements.txt
 python infer.py --vessel ascending  --input frame.dcm   --output aao_mask.npy
 python infer.py --vessel descending --input dicom_dir/  --output dao_masks/
@@ -82,7 +82,7 @@ If you use these model weights or the inference code, please cite the release:
 
 > Grafton-Clarke C, Garg P. AoPC-Seg: aortic 2D-PC CMR segmentation models
 > and inference code. Version 1.1. GitHub, 2026.
-> https://github.com/ciaranpgc-a11y/AoPC-Seg-Aortic-2D-PC-CMR-model
+> https://github.com/ciaranpgc-a11y/AoPC-Seg
 
 ## Licence
 
